@@ -9,3 +9,7 @@
 2. open with git desktop 을 클릭
 3. 프로그램 설치
 4. git 설치
+
+
+
+5.재설치했음
