@@ -1,0 +1,108 @@
+/* 유니코드 설정 */
+@charset 'utf-8';
+
+/* 전체설정 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 복수로 지정할 때는 , */
+ul , ol{
+list-style: none;
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+
+body{
+    height: 3000px;
+}
+
+/* 가시속성설정 */
+.layout001{
+    border:1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+.layout001 li{
+    border-bottom: 5px solid yellow;
+    margin-bottom: 5px;
+    background-image: linear-gradient(90deg, #ccc 50%, #000 0);
+background-size: 8px;
+background-repeat: no-repeat;
+padding-left: 10px;
+}
+
+
+.box001{
+    background-color: aquamarine;
+    padding: 40px;
+}
+.box001 span{
+    border: 2px solid #000;
+    padding:20px;
+}
+.box001 span:nth-child(1){
+    display: inline;
+}
+.box001 span:nth-child(2){
+    display: inline-block;
+}
+.box001 span:nth-child(3){
+    display: block;
+}
+
+/* float 속성 */
+.layout002{
+    border:1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box002{
+    background-color: aquamarine;
+    padding: 40px;
+}
+
+/* 부모자에게 해야함 */
+.box002:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box002 li{
+    border: 1px solid #000;
+    padding: 10px;
+    float: left;
+}
+
+.box002 li:nth-child(5){
+    float:right;
+}
+
+.box002 li:nth-child(4){
+    float:right;
+}
+
+
+/* flex 속성 */
+
+.box003{
+    background-color: aquamarine;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+
+/* space-around 간격 똑같이
+space-between 양끝에 맞추어서
+*/
+
+.box003 li{
+    border: 1px solid #000;
+    padding: 10px;
+}
