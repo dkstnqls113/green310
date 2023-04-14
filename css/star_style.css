@@ -70,7 +70,24 @@ a{
     top:40%;
     left:150px;
 }
-
+/* 이미지 사이즈가 318임 3개의 이미지중에 가운데에 올 사진부터 기준점으로 두면 됨*/
+.drink1{
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+    bottom: 5%;
+}
+.drink2{
+    position: absolute;
+    left: 50%;
+    margin-left: -420px;
+    
+}
+.drink3{
+    position: absolute;
+    left: 50%;
+    margin-left: 100px;
+}
 
 /* 텍스트 박스 설정 */
 .txtbox{
@@ -97,6 +114,12 @@ a{
     width: 100%;
     height: 320px;
     background-color: #1e3932;
+    position: relative;
+}
+.logo2{
+    position: absolute;
+    left: 25%;
+    top: 10%;
 }
 .season{
     height: 640px;
@@ -105,6 +128,11 @@ a{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+}
+.blend{
+    position: absolute;
+    left: 30%;
 }
 .costa{
     height:320px;
@@ -113,6 +141,12 @@ a{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+}
+.r{
+    position: absolute;
+    top: -15%;
+    left: 10%;
 }
 .pick{
     height: 800px;
