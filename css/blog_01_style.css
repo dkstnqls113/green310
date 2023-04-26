@@ -1,184 +1,138 @@
 @charset "UTF-8";
-*{
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
-a{
-    text-decoration: none;
-    color:inherit;
-}
-ul li{
+
+ul li {
     list-style: none;
 }
-h1{
-    font-weight: normal;
-    font-size: normal;
-}
-h2{
-    font-weight: normal;
-    font-size: normal;
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
+
+/* 폰트 설정 */
+body {
+    font-family: "맑은 고딕", "apple SD Gothic Neo", sans-serif;
+}
+
+
 /* 로고 설정 */
+.box1 {
+}
 .logo{
+    margin-top: 10px;
+}
+.logo h1{
+    font-family: 'Paytone One', sans-serif;
     font-size: 30px;
-    font-weight: bold;
+}
+.logo a{
+    color:#83a4a8;
 }
 
 /* 메뉴 설정 */
-.menu ul{
+.box2 {
+    margin-top: 10px;
+    background-color: #7cbac1;
+    margin-bottom: 40px;
+    padding: 5px 0;
+}
+
+.menu ul {
     display: flex;
 }
-.box2{
-    background-color:#7cbac1;
-    margin-bottom: 10px;
-}
-.menu ul li {
-    font-size: 14px;
-    padding: 15px;
-}
-.menu ul li a{
+
+.menu ul li a {
     display: block;
+    padding: 10px;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-
-/* 호버하기 */
-.menu ul li:hover{
+.menu ul li a:hover {
     background-color: #75dbe7;
 }
 
 
-/* 박스3,4 가로 정렬 */
-.boxA{
+
+/* 박스3 설정 */
+.boxA {
     display: flex;
 }
 
-
-/* 박스1 간격조절 */
-.box1{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.box3 {
+    width: 70%;
 }
 
-
-/* 박스3 간격조절 */
-.box3{
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-.main1 h1{
-    margin-bottom: 20px;
-}
-img{
-    margin-bottom: 10px;
-}
-.main1 p{
-    margin-bottom: 10px;
-}
-.main2{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.main2 p{
-    margin-top: 10px;
-}
-.main3 p{
-    margin-top: 10px;
-}
-
-
-/* 박스4 간격조절 */
-.box4{
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-.box4 h1{
-    margin-bottom: 10px;
-}
-.news1{
-margin-bottom: 40px;
-}
-.news2{
-    margin-bottom: 40px;
-}
-.news3{
-    margin-bottom: 40px;
-}
-
-
-/* 박스5 간격조절 */
-.copyright{
-    margin-top: 10px;
-} 
-.box5{
-    margin-top: 20px;
-}
-
-/* 박스 3,4 간격 조절 */
-.box3{
-    padding-right: 50px;
-}
-
-
-
-
-
-
-/* h1 글씨크기 조절 */
-.main1 h1{
-    font-weight: bold;
+.box3 h1 {
     font-size: 35px;
-}
-
-
-/* 박스 4 h1 글씨크기 조절 */
-.box4 h1{
     font-weight: bold;
-    font-size: 20px;
-    color:#555;
+    padding-bottom: 20px;
+}
+
+.box3 img {
+    max-width: 100%;
+}
+
+.box3 h2 {
+    padding-top: 30px;
+    font-weight: normal;
+    font-size: 25px;
 }
 
 
-/* 박스 4 선 설정 */
-.box4 h1{
+/* 박스4 설정 */
+.box4 {
+    width: 30%;
+}
+
+.box4 h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
     border-bottom: 1px dotted #ddd;
 }
 
-
-
-/* 이미지 크기 조절 */
-img{
-    max-width:100%;
+.box4 ul li a {
+    display: block;
 }
 
 
-/* 푸터조절 */
+
+/* 박스5 설정 */
+.copyright {
+    color: #666
+}
+
+.box5 {
+    border-top: 2px solid #666;
+}
+
+/* 메뉴 간격설정 */
+.menu {
+    margin-bottom: 20px;
+}
+
+/* 박스 3,4 간격설정 */
+.box3{
+    margin-right: 40px;
+}
+
+
+/* 박스a와 카피라이트 간격설정 */
 .box5{
-    border-top:1px solid #ccc;
+    margin-top: 50px;
 }
 
-
-
-/* 박스3 선넣기 */
-h2{
-    border-left:10px solid #7cbac1;
-}
-
-/* 줄바꿈 되게 하지 않기 */
-
-.news1 ul li a{
-    display: block;
-}
-.news2 ul li a{
-    display: block;
-}
-.news3 ul li a{
-    display: block;
-}
-
-
-/* 줄여도 크기 조절해보기 */
-.box1, .boxA, .menu, .copyright {
+/* 전체 크기 설정 */
+.box1, .boxA, .menu, .copyright{
     width: 1000px;
     margin: 0 auto;
 }

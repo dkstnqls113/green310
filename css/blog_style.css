@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
 /* 전체설정 */
 *{
@@ -35,11 +36,12 @@ body{
 
 }
 .logo h1{
-    font-weight: bold;
+    font-weight: normal;
     font-size: 30px;
+    font-family: 'Paytone One', sans-serif;
 }
 .logo h1 a{
-    
+    color:#83a4a8;
 }
 
 
@@ -105,8 +107,50 @@ body{
     padding: 5px;
     font-size: 14px;
 }
+.sidemenu i{
+    color:#888;
+    margin-right: 5px;
+}
 
 /* 블럭은 꽉 채운다라는 뜻 */
+
+
+/* 기사일 작성일 설정 */
+.storyinfo{
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.storyinfo i{
+    color:#aaa;
+    font-size: 18px;
+}
+.storyinfo time{
+
+}
+
+
+
+/* 기사의 카테고리 설정 */
+.story-cat{
+    margin-bottom: 25px;
+}
+/* 큰박스를 움직여야함 */
+.story-cat ul{
+display: flex;
+}
+.story-cat ul li{
+    margin-right: 5px;
+}
+.story-cat ul li a{
+    display: block;
+    background-color: #75dbe7;
+    font-size: 12px;
+    color:#fff;
+    padding: 3px 5px;
+    border-radius: 2px;
+}
+/* a는 패딩이 상하는 적용되지 
+않아서 디스플레이를 바꿔줘야 함 */
 
 
 
@@ -125,14 +169,31 @@ body{
 .recommend ul{
 
 }
-.recommend ul li{}
+.recommend ul li{
+    margin-bottom: 10px;
+}
 .recommend ul li a{
     display: block;
-    padding: 5px;
     font-size: 14px;
+    position: relative;
+}
+.recommend .txt{
+    background-color:rgba(0, 0, 0, 0.8);
+    color:#fff;
+    padding: 5px 10px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
-
+.recommend img{
+    width: 100%;
+    vertical-align: top;
+    /* 비디오, 사진, 아이콘 vertical-agline 
+    딱 붙으시요 왜냐면 리커먼드한테 사이즈를 안 정해줘서*/
+}
 
 /* 인기기사 설정 */
 .popular{
@@ -209,3 +270,5 @@ padding-right: 50px;
 }  
 
 
+/* <i class="fa fa-certificate fa-spin" aria-hidden="true"></i> */
+/* time은 나중에 날짜 표기를 여기다가 하시요 하는 것 */
