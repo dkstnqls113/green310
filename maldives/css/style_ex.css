@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+header{
+    background-color: #fff;
+}
+h1{
+    background-image: url(../img/logo1.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    text-indent: -9999px;
+    left: 50%;
+    width: 180px;
+    height: 136px;
+    margin-left: -90px;
+    top:70px;
+    background-size: contain;
+}
