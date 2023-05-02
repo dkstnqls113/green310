@@ -15,6 +15,10 @@ a {
     color: black;
 }
 
+img{
+    border: none;
+    text-align: bottom;
+}
 
 /* 폰트 설정 */
 body {
@@ -31,6 +35,7 @@ body {
 .logo h1{
     font-family: 'Paytone One', sans-serif;
     font-size: 30px;
+    font-weight: none;
 }
 .logo a{
     color:#83a4a8;
@@ -41,7 +46,6 @@ body {
     margin-top: 10px;
     background-color: #7cbac1;
     margin-bottom: 40px;
-    padding: 5px 0;
 }
 
 .menu ul {
@@ -50,10 +54,8 @@ body {
 
 .menu ul li a {
     display: block;
-    padding: 10px;
+    padding: 15px;
     font-size: 14px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .menu ul li a:hover {
@@ -102,18 +104,69 @@ body {
     padding-left: 10px;
 }
 
+.relation{
+    background-color: #f0f0d4;
+    margin-top: 40px;
+    padding: 20px;
+}
+.relation h1{
+    color:#727224;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.relation ul{
+    display: flex;
+}
+.relation ul li{
+    width: 25%;
+}
+.relation ul li a{
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+}
+.ralation img{
+    max-width: 100%;
+}
+
+
+.snsSet{
+}
+.snsSet ul{
+    display: flex;
+}
+.snsSet ul li{
+    width: 33.3333%;
+}
+.snsSet a{
+    color:#fff;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.snsSet li:nth-child(1) a{
+    background-color: #1da1f2;
+}
+.snsSet li:nth-child(2) a{
+    background-color: #1877f2;
+}
+.snsSet li:nth-child(3) a{
+    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#833ab4+0,f56040+100 */
+    background: #833ab4; /* Old browsers */
+    background: -moz-linear-gradient(left,  #833ab4 0%, #f56040 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #833ab4 0%,#f56040 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #833ab4 0%,#f56040 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#833ab4', endColorstr='#f56040',GradientType=1 ); /* IE6-9 */
+    ;
+}
+
 /* 박스4 설정 */
 .box4 {
     width: 30%;
 }
 
-.box4 h1 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #666;
-    border-bottom: 1px dotted #ddd;
-}
 .box4 ul{
     margin-bottom: 30px;
 }
@@ -121,18 +174,100 @@ body {
     margin-top: 5x;
     display: block;
     padding:10px 0;
+    font-size: 14px;
 }
 
+
+/* 특집기사 */
+.news h1{
+    font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    border-bottom: 1px dotted #ddd;
+    margin-bottom: 10px;
+}
+
+
+
+/* 추천기사 */
+.news1{
+    margin-bottom: 30px;
+}
+.news1 h1{
+    font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    border-bottom: 1px dotted #ddd;
+    margin-bottom: 10px;
+}
+.news1 ul{
+
+}
+.news1 ul li{
+    margin-bottom: 10px;
+}
+.news1 a{
+    display: block;
+    font-size: 14px;
+    position: relative;
+}
 .news1 img{
     max-width: 100%;
+    vertical-align: top;
 }
-.txt{
+.news1 .txt{
     background-color: rgba(0, 0, 0, 0.8);
     color:#fff;
     font-size: 15px;
-    padding: 5px 5px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+    /* 비디오, 사진, 아이콘 vertical-agline 
+    딱 붙으시요 왜냐면 리커먼드한테 사이즈를 안 정해줘서*/
+
+
+
+
+    
+/* 인기기사 */
+.news2 h1{
+    font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    border-bottom: 1px dotted #ddd;
+    margin-bottom: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 특집기사 */
+.box4 i{
+    padding-right: 15px;
+}
 
 
 
