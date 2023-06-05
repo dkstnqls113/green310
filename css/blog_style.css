@@ -135,7 +135,8 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-/* flex-wrap: wrap; 존속성을 가두게 하려고 */
+/* flex-wrap: wrap; 존속성을 가두게 하려고 너 지금 얼마인지 알 수 없으니까
+묶어놓은 겨 */
 .relation ul li{
     width: 25%;
 }
@@ -388,8 +389,31 @@ box-sizing:border-box 로 지정해야함*/
 /* 1. 모바일 구간 
 600px 이하구간/////////////////////////////////////////////////////// */
 @media (max-width:599px ) {
+    
+    /* 메뉴설정 */
+    .menu ul li a{
+        display: block;
+        padding: 10px;
+        font-size: 12px;
+    }
+    
     /* css 설정구간 */
+    /* snsSet 설정 */
+    .snsSet span{
+        text-indent: -9999px;
+        display:inline-block;
+        }
+}
+/* 
+opacity:0; display: none; 글씨가 안보임
+*/
 
+/* 관련기사 설정 */
+.relation ul li{
+    width: 50%;
+}
+.relation img{
+    width: 100%;
 }
 
 
@@ -409,6 +433,7 @@ box-sizing:border-box 로 지정해야함*/
     .box4-2{
         width: 50%;
     }
+
 }
 
 

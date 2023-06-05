@@ -1,0 +1,102 @@
+@charset 'UTF-8';
+
+/* 폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Play&display=swap');
+
+
+/*     font-family: 'Monoton', cursive;
+    font-family: 'Play', sans-serif; */
+
+
+/* 전체설정 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+ul, ol{
+    list-style: none;
+}
+img{
+    vertical-align: bottom;
+    border: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* logo 설정 */
+h1{
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    z-index: 10;
+}
+h1 img{
+    width: 280px;
+    height: auto;
+}
+
+
+/* 동영상 설정 */
+.vid{
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top:-60px;
+}
+.vid video{
+    width: 100%;
+    min-width: 1600px;
+}
+
+
+/* header 설정 */
+header{
+    background: linear-gradient(-45deg, #e6fc55, #b9fb05, #97e031 );
+    position: fixed;
+    width: 700px;
+    height: 100%;
+    z-index: 8;
+    transform: skewX(-40deg);
+    left: -420px;
+}
+header .gnb{
+    position: absolute;
+    right: 0;
+    top:150px;
+    width: 220px;
+    background-color: red;
+}
+header .gnb>li{
+
+}
+header .gnb>li>a{
+    text-align: right;
+    display: block;
+    padding-right: 40px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+header .gnb>li:hover>a{
+    background-color: #111;
+    color: #fff;
+}
+header .gnb em{
+    display: inline-block;
+    transform: skewX(40deg);
+}

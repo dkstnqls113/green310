@@ -30,12 +30,13 @@ body {
 .box1 {
 }
 .logo{
-    margin-top: 10px;
-}
+    margin-top: 10px;}
+
 .logo h1{
     font-family: 'Paytone One', sans-serif;
     font-size: 30px;
     font-weight: none;
+    padding: 15px;
 }
 .logo a{
     color:#83a4a8;
@@ -43,11 +44,8 @@ body {
 
 /* 메뉴 설정 */
 .box2 {
-    margin-top: 10px;
     background-color: #7cbac1;
-    margin-bottom: 40px;
 }
-
 .menu ul {
     display: flex;
 }
@@ -71,12 +69,14 @@ body {
 
 .box3 {
     width: 70%;
+    padding: 15px;
 }
 
 .box3 h1 {
     font-size: 35px;
     font-weight: bold;
     padding-bottom: 20px;
+    padding: 15px 2    px;
 }
 
 .box3 img {
@@ -165,6 +165,7 @@ body {
 /* 박스4 설정 */
 .box4 {
     width: 30%;
+    padding: 15px;
 }
 
 .box4 ul{
@@ -301,8 +302,54 @@ body {
 }
 
 /* 전체 크기 설정 */
-.box1, .boxA, .menu, .copyright{
+.box1, .menu, .boxA, .copyright{
     width: 1000px;
     margin: 0 auto;
 }
 
+
+/* 제이쿼리 구간 */
+
+
+
+
+
+/* 3. 태블릿~데스크탑구간
+768px 이상구간 ///////////////////////////////////////////////////// */
+@media (min-width:768px) {
+    /* css 설정구간 */
+    /* 박스3과 박스4의 가로정렬 */
+    .boxA{
+        display: flex;
+    }
+    
+    .box3{
+        width: 70%;
+    }
+    .box4{
+        width: 30%;
+    }
+    
+    /* 박스3, 박스4 좌우 간격 띄우기 */
+    .box3{
+        padding-right: 50px;
+        box-sizing: border-box;
+        }
+        
+    }
+
+/* 1020px */
+@media (max-width:1019px) {
+    .box2{
+        width: 1019px;
+    }
+    .box1, .menu, .boxA, .copyright{
+        margin: 0 auto;
+        width:1019px;
+    }
+    .box5{
+        width: 1019px;
+    }
+}
+
+/* 1040이상 구간 */

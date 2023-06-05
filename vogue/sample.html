@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜스폼_3D</title>
+</head>
+<body>
+    <h1>tansform_3D</h1>
+    <p>2d에서 3d로 변환 시 가장 중요한 속성은 원근감이다.<br>
+        원금감 : perspective
+    </p>
+    <p>사용법<br>
+    부모자에 원근값 수치 작성 단위포함 perspective:수치px</p>
+    <p>주의사항 : 수치가 작을수록 왜곡이 커지며 수치가 커질수록 왜곡이 적어짐</p>
+
+    <h2>예제</h2>
+    <section>
+        <div>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+        </div>
+        <div>
+            <p></p>
+        </div>
+    </section>
+
+
+
+    <section>
+        <article>
+            <p></p>
+            <p></p>
+        </article>
+    </section>
+
+
+    <div class="ex">
+        <p></p>
+    </div>
+
+
+
+    <style>
+
+        
+    .ex{
+width: 300px;
+height: 700px;
+background-color: blue;
+perspective: 800px;
+}
+    .ex p{
+        width: 300px;
+        height: 700px;
+        transition: all 0.8s;
+        background-color: violet;
+        opacity: 0.8;
+        transform-origin: center;
+    }
+    .ex p:hover{
+        transform: rotateY(360deg);
+    }
+
+
+
+
+        section {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+        section div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000 ;
+        }
+        section div:nth-child(1){
+            perspective: 150px;
+        }
+
+        section div:nth-child(3){
+            perspective: 800px;
+        }
+        section div p{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+            opacity: 0.5;
+            transform: rotateY(50deg);
+        }
+
+
+
+
+        
+        section article{
+            width: 800px;
+            height: 600px;
+            border: 1px solid #000;
+            /* display: flex; */
+            perspective: 380px;
+            background-color: red;
+        }
+        /* perspective 뜻은 원근감 */
+        section article p{
+            width: 800px;
+            height: 50%;
+            background-color: violet;
+            opacity: 0.8;
+            margin: 0;
+            transition: all 0.8s;
+        }
+
+
+        section article p:nth-child(1){
+            transform-origin: top;
+        }
+        section article p:nth-child(2){
+            transform-origin: bottom;
+        }
+
+        section article:hover p:nth-child(1){
+            transform: rotateX(40deg);
+        }
+        section article:hover p:nth-child(2){
+            transform: rotateX(-40deg);
+        }
+
+        /* section article p:nth-child(1){
+            transform-origin: left center;
+        }
+        section article p:nth-child(2){
+            transform-origin: right top;
+        }
+        section article:hover p:nth-child(1){
+            transform: rotateY(60deg);
+        }
+        section article:hover p:nth-child(2){
+
+            transform: rotateY(-60deg);
+        } */
+    </style>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+ul, ol{
+    list-style: none;
+}
+img{
+    border: none;
+    vertical-align: bottom;
+}
+body{
+    font-family: '맑은고딕', 'apple SD Gothic Neo', sans-serif;
+}
+
+/* logo 설정 */
+.logo{
+    
+}
+.logo a{
+
+}
+.logo img{
+    width: 250px;
+    height: 33px;
+}
+.logo a:hover{
+
+}
+
+
+
+
+
+
+
+
+/* menu 설정 */
+.menu{
+
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+}
+.menu ul li a{
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.menu li a:hover{
+    background-color: #eee;
+}
+
+/* 이미지 설정 */
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* 공지사항 설정 */
+.notice{
+
+}
+.notice ul{
+
+}
+.notice ul li{
+
+}
+.notice ul li a{
+
+}
+.notice span{
+
+}
+.notice .txt{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* copyright 설정 */
+.copyright{
+
+}
+
+
+
+
+
+
+/* 박스5 바형태 구현하기 */
+.box5{
+    background-color: #ddd;
+    padding: 15px 0;
+}
+
+
+
+
+
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리 구간/////////////// */
+
+
+
+
+
+

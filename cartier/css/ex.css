@@ -1,0 +1,188 @@
+@charset 'TUF-8';
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/* 전체설정 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+img{
+    border: none;
+    vertical-align: bottom;
+}
+
+
+/* 정렬 shift+alt+f */
+
+
+
+/* 배경이미지설정 */
+#wrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url(../img/bg.jpg);
+    background-position: center bottom;
+    /* 좌우 상하 */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* 로고설정 */
+#wrap h1{
+    position: fixed;
+    text-align: center;
+    left: 50px;
+    top: 240px;
+    padding: 20px;
+    /* background-color: red; */
+}
+#wrap h1 strong{
+    display: block;
+    font-size: 16px;
+    line-height: 1.1;
+    /* inline-block으로 되어 있으면 h1 사이즈가 작으면 자동으로 이미지가 줄바꿈되어 line-height를 쓸 수 있다. */
+    /* background-color: red; */
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#333;
+}
+#wrap h1 img{
+    width: 200px;
+    height: auto;
+}
+#wrap h1 span{
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* hero 영역 설정 */
+.txt{
+    position: fixed;
+    left: 70px;
+    top: 380px;
+    font-size: 30px;
+    color: #111;
+    font-family: 'Raleway', sans-serif;
+}
+.txt span{
+    color: #888;
+}
+
+
+
+/* section 설정 */
+section{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* 원본에는 투명한 아이가 있음 글씨가 안잡히기 때문에 */
+}
+section article{
+    /* 오른쪽에 붙어서 왼쪽으로 쌓여라 */
+    float: right;
+    /* 가상선택자(after) 안해도 됨 밑에꺼가 없어서 section은 하나만 있기 때문에 */
+    width: 12%;
+    /* 화면기준일때는 %가 좋음 */
+    background-image: url(../img/divider.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+}
+
+/* section article:hover{
+    width: 35%;
+    transition:all 1.8s;-제이쿼리로 구현함 중복적용시 에러발생
+} */
+
+
+section article h2{
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #666;
+    border-left: 3px solid #555;
+    padding-left: 15px;
+    /* background-color: yellow; */
+    z-index: 10;
+}
+
+
+
+
+
+article{
+    overflow: hidden;
+}
+article video{
+    position: absolute;
+    left: -100px;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: 2;
+    /* display:none은 부드럽게 움직이지 않는다. */
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+
+/* article 내부에 타이틀박스설정 */
+article div{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    top:300px;
+    transition: all 1.2s;
+}
+
+article:hover h2{
+    color: #fff;
+}
+
+article:hover div{
+    top:270px;
+    height: 70px;
+}
+
+
+
+
+
+article:nth-child(3) .txt{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+    z-index: 3;
+}
+article:nth-child(3) .txt .ac{
+    color:#fff;
+    font-weight: bold;
+}
